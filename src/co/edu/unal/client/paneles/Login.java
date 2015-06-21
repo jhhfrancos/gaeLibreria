@@ -1,12 +1,9 @@
 package co.edu.unal.client.paneles;
 
-import co.edu.unal.client.Libreria;
 import co.edu.unal.client.services.LoginService;
 import co.edu.unal.client.services.LoginServiceAsync;
-import co.edu.unal.shared.FieldVerifier;
 import co.edu.unal.shared.Usuario;
 
-import com.google.api.gwt.oauth2.client.AuthRequest;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -19,7 +16,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.TextBox;
 
-public class Login extends Composite implements ClickHandler {
+public class Login extends Composite {
 
 	private final LoginServiceAsync loginService = GWT
 			.create(LoginService.class);
@@ -77,11 +74,6 @@ public class Login extends Composite implements ClickHandler {
 		this.usuario.activo = false;
 		this.usuario.admin = false;
 		menuPrincipal.desactivarTabs();
-	}
-
-	public void onClick(ClickEvent event) {
-		if (event.getSource() == null) {
-		}
 	}
 
 	

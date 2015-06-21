@@ -18,7 +18,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.TextBox;
 
-public class Registro extends Composite implements ClickHandler {
+public class Registro extends Composite {
 	private static final String READONLY_SCOPE = "http://127.0.0.1:8888/Libreria.html";
 
 	private final LoginServiceAsync loginService = GWT
@@ -67,10 +67,7 @@ public class Registro extends Composite implements ClickHandler {
 		
 	}
 
-	public void onClick(ClickEvent event) {
-		if (event.getSource() == null) {
-		}
-	}
+
 
 	protected void registrar() {
 		String name = nombreTextBox.getText();

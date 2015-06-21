@@ -20,9 +20,8 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.TextBox;
-import com.sun.java.swing.plaf.windows.resources.windows;
 
-public class LibrosWindow extends Composite implements ClickHandler {
+public class LibrosWindow extends Composite{
 
 	private final FlexTable flexTable = new FlexTable();
 	private final FlexTable flexTablePrincipal = new FlexTable();
@@ -298,9 +297,4 @@ public class LibrosWindow extends Composite implements ClickHandler {
 		categoriaTextBox.setText("");
 	}
 
-	public void onClick(ClickEvent event) {
-		if (event.getSource() == null) {
-
-		}
-	}
 }

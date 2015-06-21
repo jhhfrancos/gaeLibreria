@@ -2,13 +2,8 @@ package co.edu.unal.client.paneles;
 
 import co.edu.unal.shared.Usuario;
 
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.HasHorizontalAlignment;
-import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.gwtext.client.core.Position;
 import com.gwtext.client.widgets.Panel;
 import com.gwtext.client.widgets.TabPanel;

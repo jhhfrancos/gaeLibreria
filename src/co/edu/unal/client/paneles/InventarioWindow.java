@@ -16,7 +16,7 @@ import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.TextBox;
 
-public class InventarioWindow extends Composite implements ClickHandler {
+public class InventarioWindow extends Composite {
 	private final FlexTable flexTable = new FlexTable();
 
 	private final Label headerInfoLabel = new Label("Informacion del libro:");
@@ -101,8 +101,4 @@ public class InventarioWindow extends Composite implements ClickHandler {
 		}
 	}
 
-	public void onClick(ClickEvent event) {
-		if (event.getSource() == null) {
-		}
-	}
 }

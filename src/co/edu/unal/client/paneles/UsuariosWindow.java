@@ -19,7 +19,7 @@ import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 
-public class UsuariosWindow extends Composite implements ClickHandler {
+public class UsuariosWindow extends Composite {
 
 	private final FlexTable flexTable = new FlexTable();
 	private final FlexTable flexTablePrincipal = new FlexTable();
@@ -160,8 +160,5 @@ public class UsuariosWindow extends Composite implements ClickHandler {
 		});
 	}
 
-	public void onClick(ClickEvent event) {
-		if (event.getSource() == null) {
-		}
-	}
+	
 }

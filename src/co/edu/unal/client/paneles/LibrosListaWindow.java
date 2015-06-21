@@ -19,7 +19,7 @@ import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 
-public class LibrosListaWindow extends Composite implements ClickHandler {
+public class LibrosListaWindow extends Composite {
 	private final FlexTable flexTable = new FlexTable();
 
 	private final Label isbnLabel = new Label("ISBN");
@@ -112,10 +112,6 @@ public class LibrosListaWindow extends Composite implements ClickHandler {
 		this.librosEliminados.add(this.resultado.get(fila - 1));
 	}
 
-	public void onClick(ClickEvent event) {
-		if (event.getSource() == null) {
-		}
-	}
 
 	protected void remover() {
 		if (!librosEliminados.isEmpty()) {

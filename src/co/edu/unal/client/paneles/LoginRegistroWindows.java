@@ -1,23 +1,14 @@
 package co.edu.unal.client.paneles;
 
-import java.io.IOException;
-
-import co.edu.unal.client.services.LoginService;
-import co.edu.unal.client.services.LoginServiceAsync;
-import co.edu.unal.shared.FieldVerifier;
-import co.edu.unal.shared.Usuario;
-
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.user.client.ui.Composite; 
-import com.gwtext.client.core.EventObject;  
-import com.gwtext.client.core.RegionPosition;  
-import com.gwtext.client.widgets.Button;  
-import com.gwtext.client.widgets.Panel;  
-import com.gwtext.client.widgets.TabPanel;  
-import com.gwtext.client.widgets.Window;  
-import com.gwtext.client.widgets.event.ButtonListenerAdapter;  
-import com.gwtext.client.widgets.layout.BorderLayout;  
+import com.google.gwt.user.client.ui.Composite;
+import com.gwtext.client.core.EventObject;
+import com.gwtext.client.core.RegionPosition;
+import com.gwtext.client.widgets.Button;
+import com.gwtext.client.widgets.Panel;
+import com.gwtext.client.widgets.TabPanel;
+import com.gwtext.client.widgets.Window;
+import com.gwtext.client.widgets.event.ButtonListenerAdapter;
+import com.gwtext.client.widgets.layout.BorderLayout;
 import com.gwtext.client.widgets.layout.BorderLayoutData;
 
 public class LoginRegistroWindows extends Composite {

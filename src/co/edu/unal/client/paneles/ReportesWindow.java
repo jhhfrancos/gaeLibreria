@@ -17,7 +17,7 @@ import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 
-public class ReportesWindow extends Composite implements ClickHandler {
+public class ReportesWindow extends Composite {
 
 	private final FlexTable flexTable = new FlexTable();
 	private final FlexTable flexTablePrincipal = new FlexTable();
@@ -67,10 +67,7 @@ public class ReportesWindow extends Composite implements ClickHandler {
 		});
 	}
 
-	public void onClick(ClickEvent event) {
-		if (event.getSource() == null) {
-		}
-	}
+	
 	
 	public void masterReset(){
 		for(int index = 1; index < flexTable.getRowCount(); index++)
