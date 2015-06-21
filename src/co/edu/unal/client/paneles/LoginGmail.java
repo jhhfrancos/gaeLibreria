@@ -31,6 +31,8 @@ public class LoginGmail extends Composite {
 		private final Anchor signInLink = new Anchor("");
 		private final Image loginImage = new Image();
 		private final TextBox nameField = new TextBox();
+		
+		private MenuPrincipal menuPrincipal;
 
 		private final LoginGmailServiceAsync loginGmailService = GWT.create(LoginGmailService.class);
 
@@ -101,8 +103,8 @@ public class LoginGmail extends Composite {
 
 		
 
-		public LoginGmail(){
-
+		public LoginGmail(MenuPrincipal menuPrincipalIn){
+			this.menuPrincipal = menuPrincipalIn;
 			initWidget(loginPanel);
 			final Button sendButton = new Button("Send");
 			
@@ -128,9 +130,11 @@ public class LoginGmail extends Composite {
 						loadLogout(result);
 						sendButton.setEnabled(true);	
 						nameField.setEnabled(true);
+						menuPrincipal.activarTabs();
 						
 					} else {
 						loadLogin(result);
+						menuPrincipal.desactivarTabs();
 					}
 					userEmail.append(result.getEmailAddress());
 				}

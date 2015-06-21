@@ -33,7 +33,7 @@ public class LoginRegistroWindows extends Composite implements ClickHandler {
 		panel.setBorder(true);
 		this.menuPrincipal = menuPrincipal;
 		loginPanel = new Login(this.menuPrincipal);
-		loginGmailPanel = new LoginGmail();//loginGmailPanel = new LoginGmail(this.menuPrincipal);
+		loginGmailPanel = new LoginGmail(this.menuPrincipal);
 
 		//center panel  
 		TabPanel tabPanel = new TabPanel();  
