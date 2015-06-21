@@ -45,7 +45,7 @@ public class LoginGmail extends Composite {
 
 		private void loadLogout(final LoginInfo loginInfo) {
 			signInLink.setHref(loginInfo.getLogoutUrl());
-			signInLink.setText(loginInfo.getName());
+			signInLink.setText("Sign out to " + loginInfo.getName());
 			signInLink.setTitle("Sign out");
 		}
 
@@ -131,6 +131,7 @@ public class LoginGmail extends Composite {
 						sendButton.setEnabled(true);	
 						nameField.setEnabled(true);
 						menuPrincipal.activarTabs();
+						
 						
 					} else {
 						loadLogin(result);

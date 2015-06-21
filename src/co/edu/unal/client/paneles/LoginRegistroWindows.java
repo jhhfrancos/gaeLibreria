@@ -26,7 +26,9 @@ public class LoginRegistroWindows extends Composite implements ClickHandler {
 	private Registro registroPanel = new Registro();
 	private Login loginPanel;
 	private LoginGmail loginGmailPanel;
-	
+	private Panel tab1 = new Panel();
+	private Panel tab3 = new Panel();
+	private Panel tab2 = new Panel();
 	
 	public LoginRegistroWindows(MenuPrincipal menuPrincipal){
 		initWidget(panel);
@@ -39,24 +41,22 @@ public class LoginRegistroWindows extends Composite implements ClickHandler {
 		TabPanel tabPanel = new TabPanel();  
 		tabPanel.setActiveTab(0);  
 
-		Panel tab1 = new Panel();
 		tab1.setTitle("Login");
 		tab1.add(loginPanel);  
 		tab1.setAutoScroll(true);  
 		
-		Panel tab3 = new Panel();
 		tab3.setTitle("LoginGmail");
 		tab3.add(loginGmailPanel);  
 		tab3.setAutoScroll(true); 
-
-		Panel tab2 = new Panel();  
+  
 		tab2.setTitle("Registro");  
 		tab2.add(registroPanel); 
 		tab2.setAutoScroll(true);  
 
-		tabPanel.add(tab1);  
-		tabPanel.add(tab2);
+		 
 		tabPanel.add(tab3);
+		tabPanel.add(tab1); 
+		tabPanel.add(tab2);
 
 		//west panel  
 		Panel navPanel = new Panel();  
