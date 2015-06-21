@@ -20,7 +20,7 @@ import com.gwtext.client.widgets.event.ButtonListenerAdapter;
 import com.gwtext.client.widgets.layout.BorderLayout;  
 import com.gwtext.client.widgets.layout.BorderLayoutData;
 
-public class LoginRegistroWindows extends Composite implements ClickHandler {
+public class LoginRegistroWindows extends Composite {
 	private MenuPrincipal menuPrincipal;
 	private Panel panel = new Panel();  
 	private Registro registroPanel = new Registro();
@@ -94,14 +94,12 @@ public class LoginRegistroWindows extends Composite implements ClickHandler {
 
 	}
 	private static String getBogusMarkup() {  
-		return "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +  
-				"Sed metus nibh, sodales a, porta at, vulputate eget, dui.  " +  
-				"In pellentesque nisl non sem. Suspendisse nunc sem, pretium eget, " +  
-				"cursus a, fringilla vel, urna.";  
+		return "<p>1) Existe dos formas para log, ingresar por cuenta de Gmail, ingresar por cuenta local"
+				+ "<br>2) Al ingresar de cualquier forma, puede agregar libros en la pestania Libros."
+				+ "<br>3) Al ingresar un libro, puede consultarlo en la pestania Inventario."
+				+ "<br>4) O puede consultar todos los libros existentes en la pestania reportes"
+				+ "<br>5) Si desea eliminar libros, ingrese a Libros, ingresar ISBN y titulo, click en realizar busqueda, click en rea"
+				+ "lizar busqueda.";  
 	}
-	@Override
-	public void onClick(ClickEvent event) {
-		// TODO Auto-generated method stub
 
-	}  
 }
