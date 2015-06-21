@@ -1,0 +1,2 @@
+serviceClass: co.edu.unal.client.services.LibraryService
+path: 2470538FA7452260CEC82E5CC11AF18E.gwt.rpc

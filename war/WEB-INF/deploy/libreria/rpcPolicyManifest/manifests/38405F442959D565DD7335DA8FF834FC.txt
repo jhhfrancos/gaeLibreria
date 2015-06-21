@@ -1,0 +1,2 @@
+serviceClass: co.edu.unal.client.services.LoginService
+path: 9E696105622004A95EA2AB571922C238.gwt.rpc

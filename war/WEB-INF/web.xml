@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>co.edu.unal.server.LoginServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/libreria/login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>loginGmailServlet</servlet-name>
+    <servlet-class>co.edu.unal.server.LoginGmailServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginGmailServlet</servlet-name>
+    <url-pattern>/libreria/loginGmail</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>libreriaServlet</servlet-name>
+    <servlet-class>co.edu.unal.server.LibraryServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>libreriaServlet</servlet-name>
+    <url-pattern>/libreria/library</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Libreria.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

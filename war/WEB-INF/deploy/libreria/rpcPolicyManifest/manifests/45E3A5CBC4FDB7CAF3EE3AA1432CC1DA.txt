@@ -1,0 +1,2 @@
+serviceClass: co.edu.unal.client.services.LoginGmailService
+path: 3275E7805CDD5EB7F6AF59A38A99A136.gwt.rpc
